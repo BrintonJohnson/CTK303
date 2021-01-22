@@ -5,9 +5,11 @@
 body {
   -webkit-transform-style: preserve-3d;
    -webkit-backface-visibility: hidden;
-   background-color: #aaaaaa;
-   /* display: grid;
-   grid-template-rows: 4fr; */
+   background-color: #ccddff;
+   border: 1px solid red;
+   font-family: Helvetica, sans-serif;
+   text-align: center;
+   height: 1000px;
 }
 .fg-card {
   position: absolute;
@@ -58,6 +60,25 @@ body {
   transition: all 0.5s ease-in-out;
 }
 
-/* a {
-  grid-row: span 1;
-} */
+h3 {
+  margin: 20px 0 50px 0;
+}
+
+.gallery img {
+  width: 700px;
+  border: 6px solid white;
+}
+
+.gallery {
+  padding-top: 0px;
+  height: 0px;
+}
+
+.gallery a {
+  padding: 0px 600px;
+}
+
+p {
+  margin: 500px 0 0 0;
+  text-align: left;
+}
