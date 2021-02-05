@@ -1,0 +1,39 @@
+body {
+  font-family: Helvetica, sans-serif;
+  text-align: center;
+  background-color: #bbbbbb;
+}
+
+#scene {
+  width: 1400px;
+  border: 6px solid black;
+}
+
+#mouse {
+  transform-origin: center;
+  opacity: 1;
+  transform: scale(1);
+  animation: peek 6s infinite;
+}
+
+@keyframes peek {
+  0% {transform: scale(0.7); opacity: 0;}
+  30% {transform: scale(1); opacity: 1;}
+  40% {transform: scale(1); opacity: 1;}
+  45% {transform: scale(0.7); opacity: 0;}
+  100% {transform: scale(0.7); opacity: 0;}
+}
+
+#cat {
+  transform-origin: center;
+  transform: translate(0, 0);
+  animation: claw 6s infinite;
+}
+
+@keyframes claw {
+  0% {transform: translate(0, -1000px);}
+  45% {transform: translate(0, -1000px);}
+  50% {transform: translate(0, 0);}
+  65% {transform: translate(0, 0);}
+  100% {transform: translate(0, -1000px);}
+}
